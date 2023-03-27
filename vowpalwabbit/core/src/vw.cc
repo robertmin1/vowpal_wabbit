@@ -48,7 +48,8 @@ std::unique_ptr<VW::workspace> initialize_internal(
     VW::details::read_regressor_file(*all, all_initial_regressor_files, local_model);
     model = &local_model;
   }
-
+  // Screening exercise 1: Add some code to print 'Hello world' when VW starts.
+  std::cout << "Hello world!" << std::endl;
   std::vector<std::string> dictionary_namespaces;
   try
   {
